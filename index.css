@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+body {
+ background-image: url("https://cdn.wallpapersafari.com/55/73/ghY4rc.jpg");
+ background-color: #cccccc;
+ font-family: 'Redressed', cursive;
+}
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: black;
+  text-shadow: 2px 2px 4px #d791ff;
+}
+.header-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-input-con {
+  margin-bottom: 5rem;
+}
+.select-con {
+  margin: 4rem 0;
+}
+.episode-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list-items {
+  margin: 1rem;
+}
+.list-items img {
+  border-radius: 10px;
+}
+.list-items p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #54bab9;
+  font-weight: 500;
+}
+.list-items i {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+.fa-circle-play {
+  color: #ff7878;
+}
+.fa-clock {
+  color: #d8ae78;
+}
+.is-hidden {
+  display: none;
+}
+.select-con {
+  overflow: hidden;
+  position: relative;
+}
+#select-episode {
+  background-color: #2D2255;
+  font-size: large;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem 1.1rem;
+  width: 20rem;
+  color: #fff;
+  cursor: pointer;
+}
+.select-con::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 0.7rem;
+  transition: all 0.3s ease;
+}
+
+.select-con:hover::after {
+  background-color:#9fA3E3 ;
+  color:#fff;
+}
+/* search input */
+.search-input-con {
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  color: #000;
+  font-size: large;
+}
+.search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  padding: 5px;
+  padding-left: 10px;
+}
+#search-input {
+  background-color: #f7ecde;
+  font-size: 1rem;
+  width: 20vw;
+  padding: 0.8rem;
+  padding-left: 3rem;
+  transition: all 0.3s ease-in-out;
+  border: 0.5px solid #000;
+  border-radius: 25px;
+}
+#search-input::placeholder {
+  color: #000;
+}
